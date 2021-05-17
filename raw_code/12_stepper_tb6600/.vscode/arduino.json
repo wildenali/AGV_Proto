@@ -1,0 +1,6 @@
+{
+    "port": "COM6",
+    "board": "arduino:avr:mega",
+    "configuration": "cpu=atmega2560",
+    "sketch": "12_stepper_tb6600.ino"
+}
