@@ -1,10 +1,9 @@
-#include "paramconfig.h"
-#include "emergencystop.h"
+#include "_parameter/GlobalVariable.h"
+#include "emergency_stop/EmergencyStop.h"
 
 void setup() {
   Serial.begin(115200);
-  paramconfig_setup();
-  attachInterrupt(digitalPinToInterrupt(emergency_stop_pin), emergencystop_action, FALLING);
+  emergency_stop_setup();
 }
 
 void loop() {
